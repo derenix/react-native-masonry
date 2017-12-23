@@ -22,7 +22,8 @@ export function _getImageTag (props, gutter = 0) {
   const imageProps = {
     key: props.uri,
     source: {
-      uri: props.uri
+      uri: props.uri,
+      headers: props.requestHeaders
     },
     resizeMethod: 'auto',
     style: {
